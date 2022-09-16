@@ -1,0 +1,16 @@
+<div class="row">
+  <aside class="aside col-3">
+    <ul>
+      <li *ngFor="let m of data">
+        {{m.name}}
+      </li>
+    </ul>
+  </aside>
+  <div class="content col row">
+    <div class="card col-3 mx-3 mb-3" *ngFor="let t of type">
+      <img src="{{t.image}}"/>
+      <p>{{t.name}}</p>
+      <p>{{t.price}}</p>
+    </div>
+  </div>
+</div>
