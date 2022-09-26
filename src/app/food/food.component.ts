@@ -21,7 +21,7 @@ export class FoodComponent {
       this.data = data1.data;
     });
     const url2 = 'https://foodgroup.herokuapp.com/api/today-special';
-    this.http.get<IFoodType>(url2).subscribe(data2=>{
+    this.http.get<{data:IType[]}>(url2).subscribe(data2=>{
       this.type = data2.data;
     });
   }

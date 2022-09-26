@@ -6,11 +6,17 @@
       </li>
     </ul>
   </aside>
-  <div class="content col row">
-    <div class="card col-3 mx-3 mb-3" *ngFor="let t of type">
-      <img src="{{t.image}}"/>
-      <p>{{t.name}}</p>
-      <p>{{t.price}}</p>
+  <div class="content col">
+    <div class="row">
+      <div class="col-3" *ngFor="let t of type">
+        <div class="card mt-3 mb-3" >
+          <img src="{{t.image}}"/>
+          <div class="card-body">
+            <p>{{t.name}}</p>
+            <p>{{t.price}}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
